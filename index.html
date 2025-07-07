@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kamu, Dalam Diam yang Aku Simpan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #101010, #1a1a1a);
+      color: #f3f3f3;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      color: #fbb8b8;
+      animation: fadeDown 1s ease-in-out;
+    }
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #ffdddd;
+      font-size: 1.6rem;
+      animation: fadeDown 1s ease-in-out;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      animation: fadeIn 1.2s ease-in forwards;
+      opacity: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .photo {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(255,255,255,0.05);
+      transform: scale(0.95);
+      transition: all 0.4s ease;
+      opacity: 0;
+      animation: zoomIn 0.8s ease forwards;
+    }
+    .photo:hover {
+      transform: scale(1.02);
+    }
+    .video-container {
+      margin: 40px 0;
+      animation: fadeIn 1.5s ease-in forwards;
+      opacity: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 12px;
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes zoomIn {
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tentang Kamu, Dalam Diam yang Aku Simpan</h1>
+    <h2>Bab I – Tentang Kamu yang Layak Diabadikan</h2>
+    <p>Kamu mungkin bertanya-tanya… kenapa isinya foto kamu semua? ...</p>
+
+    <h2>Bab II – Kalau Suatu Hari Aku Diizinkan</h2>
+    <p>Dan… kalau suatu hari aku diizinkan, aku pengen nambah satu hal lagi ke dalam kotak ini...</p>
+
+    <div class="gallery">
+      <img src="https://drive.google.com/uc?export=view&id=1-5p0gAa1zPNWyAPoiAJtOBOgFkW-r1fh" class="photo" alt="Foto 1">
+      <img src="https://drive.google.com/uc?export=view&id=1-HOY8DYe9UM6cSAKHJ0ovc-VoZISsNGR" class="photo" alt="Foto 2">
+    </div>
+
+    <h2>Bab III – Tentang Video yang Datang Sebelum Tanggalnya</h2>
+    <p>Mungkin ini terlalu cepat. Tanggal 23 Agustus masih lama… tapi aku nggak pengen nunggu waktu...</p>
+    <div class="video-container">
+      <iframe src="https://drive.google.com/file/d/12hyZ8RAe3IZ3vEkfbkJircRoAql4WlyC/preview" allowfullscreen></iframe>
+    </div>
+
+    <h2>Bab IV – Untuk Yang Layak Disimpan, Diam-Diam</h2>
+    <p>Mungkin semua ini cuma hal kecil... Terima kasih udah jadi sosok yang pantas disimpan.</p>
+  </div>
+</body>
+</html>
