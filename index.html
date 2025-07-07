@@ -7,82 +7,29 @@
   <title>Tentang Kamu, Dalam Diam yang Aku Simpan</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #101010, #1a1a1a);
-      color: #f3f3f3;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.8rem;
-      margin-bottom: 40px;
-      color: #fbb8b8;
-      animation: fadeDown 1s ease-in-out;
-    }
-    h2 {
-      margin-top: 50px;
-      margin-bottom: 20px;
-      color: #ffdddd;
-      font-size: 1.6rem;
-      animation: fadeDown 1s ease-in-out;
-    }
-    p {
-      font-size: 1.15rem;
+      background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
+      color: #fff;
       line-height: 1.8;
-      margin-bottom: 25px;
-      animation: fadeIn 1.2s ease-in forwards;
-      opacity: 0;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin: 40px 0;
-    }
-    .photo {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(255,255,255,0.05);
-      transform: scale(0.95);
-      transition: all 0.4s ease;
-      opacity: 0;
-      animation: zoomIn 0.8s ease forwards;
-    }
-    .photo:hover {
-      transform: scale(1.02);
-    }
-    .video-container {
-      margin: 40px 0;
-      animation: fadeIn 1.5s ease-in forwards;
-      opacity: 0;
-    }
-    iframe {
-      width: 100%;
-      height: 360px;
-      border: none;
-      border-radius: 12px;
-    }
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-    @keyframes zoomIn {
-      to { opacity: 1; transform: scale(1); }
-    }
+    .container { max-width: 900px; margin: auto; padding: 60px 20px; }
+    h1 { font-size: 2.8rem; text-align: center; color: #ffc0cb; margin-bottom: 40px; animation: fadeIn 2s ease; }
+    h2 { font-size: 1.6rem; color: #ffdddd; margin-top: 60px; margin-bottom: 20px; animation: fadeIn 2s ease; }
+    p { font-size: 1.15rem; margin-bottom: 20px; animation: fadeIn 1.2s ease-in-out; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; margin-bottom: 50px; }
+    .photo { width: 100%; border-radius: 12px; box-shadow: 0 4px 16px rgba(255,255,255,0.1); transform: scale(0.95); transition: 0.3s ease; }
+    .photo:hover { transform: scale(1); }
+    .video-container { margin: 40px 0; }
+    iframe { width: 100%; height: 360px; border: none; border-radius: 12px; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Tentang Kamu, Dalam Diam yang Aku Simpan</h1>
+
     <h2>Bab I – Tentang Kamu yang Layak Diabadikan</h2>
     <p>Kamu mungkin bertanya-tanya… kenapa isinya foto kamu semua? ...</p>
 
@@ -90,8 +37,35 @@
     <p>Dan… kalau suatu hari aku diizinkan, aku pengen nambah satu hal lagi ke dalam kotak ini...</p>
 
     <div class="gallery">
-      <img src="https://drive.google.com/uc?export=view&id=1-5p0gAa1zPNWyAPoiAJtOBOgFkW-r1fh" class="photo" alt="Foto 1">
-      <img src="https://drive.google.com/uc?export=view&id=1-HOY8DYe9UM6cSAKHJ0ovc-VoZISsNGR" class="photo" alt="Foto 2">
+      <img src="https://drive.google.com/uc?export=view&id=1a" class="photo" alt="Foto 1">
+<img src="https://drive.google.com/uc?export=view&id=1b" class="photo" alt="Foto 2">
+<img src="https://drive.google.com/uc?export=view&id=1c" class="photo" alt="Foto 3">
+<img src="https://drive.google.com/uc?export=view&id=1d" class="photo" alt="Foto 4">
+<img src="https://drive.google.com/uc?export=view&id=1e" class="photo" alt="Foto 5">
+<img src="https://drive.google.com/uc?export=view&id=1f" class="photo" alt="Foto 6">
+<img src="https://drive.google.com/uc?export=view&id=1g" class="photo" alt="Foto 7">
+<img src="https://drive.google.com/uc?export=view&id=1h" class="photo" alt="Foto 8">
+<img src="https://drive.google.com/uc?export=view&id=1i" class="photo" alt="Foto 9">
+<img src="https://drive.google.com/uc?export=view&id=1j" class="photo" alt="Foto 10">
+<img src="https://drive.google.com/uc?export=view&id=1k" class="photo" alt="Foto 11">
+<img src="https://drive.google.com/uc?export=view&id=1l" class="photo" alt="Foto 12">
+<img src="https://drive.google.com/uc?export=view&id=1m" class="photo" alt="Foto 13">
+<img src="https://drive.google.com/uc?export=view&id=1n" class="photo" alt="Foto 14">
+<img src="https://drive.google.com/uc?export=view&id=1o" class="photo" alt="Foto 15">
+<img src="https://drive.google.com/uc?export=view&id=1p" class="photo" alt="Foto 16">
+<img src="https://drive.google.com/uc?export=view&id=1q" class="photo" alt="Foto 17">
+<img src="https://drive.google.com/uc?export=view&id=1r" class="photo" alt="Foto 18">
+<img src="https://drive.google.com/uc?export=view&id=1s" class="photo" alt="Foto 19">
+<img src="https://drive.google.com/uc?export=view&id=1t" class="photo" alt="Foto 20">
+<img src="https://drive.google.com/uc?export=view&id=1u" class="photo" alt="Foto 21">
+<img src="https://drive.google.com/uc?export=view&id=1v" class="photo" alt="Foto 22">
+<img src="https://drive.google.com/uc?export=view&id=1w" class="photo" alt="Foto 23">
+<img src="https://drive.google.com/uc?export=view&id=1x" class="photo" alt="Foto 24">
+<img src="https://drive.google.com/uc?export=view&id=1y" class="photo" alt="Foto 25">
+<img src="https://drive.google.com/uc?export=view&id=1z" class="photo" alt="Foto 26">
+<img src="https://drive.google.com/uc?export=view&id=2a" class="photo" alt="Foto 27">
+<img src="https://drive.google.com/uc?export=view&id=2b" class="photo" alt="Foto 28">
+<img src="https://drive.google.com/uc?export=view&id=2c" class="photo" alt="Foto 29">
     </div>
 
     <h2>Bab III – Tentang Video yang Datang Sebelum Tanggalnya</h2>
