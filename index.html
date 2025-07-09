@@ -2,104 +2,106 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang Kamu, Dalam Diam yang Aku Simpan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang kamu, dalam diam yang aku simpan</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(120deg, #fff0f5, #e6e6fa);
-      color: #444; line-height: 1.8; padding: 0;
-      overflow-x: hidden; scroll-behavior: smooth; position: relative;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf8;
+      color: #4a4a4a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
     }
     header {
-      position: relative; width: 100%; height: 300px;
-      background: url('https://drive.google.com/uc?export=view&id=1-FHvcYMBv-Z4DUBPR0J0n3EC-cU55cUb') no-repeat center center/cover;
-      display: flex; align-items: center; justify-content: center;
-      animation: fadeInDown 1.5s ease;
+      text-align: center;
     }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem; color: #fff;
-      background: rgba(0, 0, 0, 0.4); padding: 1rem 2rem;
-      border-radius: 12px; text-align: center;
+    header img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
     }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: #111; font-size: 1.8rem;
-      border-bottom: 2px solid #aaa; padding-bottom: .5rem;
-      margin-top: 4rem; margin-bottom: 1rem;
+    h1, h2 {
+      color: #000;
+      text-align: center;
     }
     .section {
-      max-width: 800px; margin: 0 auto 4rem;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 2rem; border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      backdrop-filter: blur(5px);
-      opacity: 0; transform: translateY(30px);
-      transition: all 1s ease; animation: slideUp 1s ease-in-out forwards;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
-    .show { opacity: 1; transform: translateY(0); }
-    .photo-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px; margin-top: 2rem;
+    .image-gallery img {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
     }
-    .photo-grid img {
-      width: 100%; border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .video {
+      text-align: center;
+      margin-top: 20px;
     }
-    .photo-grid img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    iframe {
-      display: block; margin: 2rem auto;
-      max-width: 100%; border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-    }
-    p { margin-bottom: 1.2rem; color: #555; animation: fadeIn 2s ease; }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    #particles-js {
-      position: fixed; top: 0; left: 0;
-      width: 100%; height: 100%; z-index: -1;
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>
   <header>
-    <h1>Tentang Kamu, Dalam Diam yang Aku Simpan</h1>
+    <img src="https://drive.google.com/uc?id=1-FHvcYMBv-Z4DUBPR0J0n3EC-cU55cUb" alt="Header Foto" />
+    <h1>Tentang kamu, dalam diam yang aku simpan</h1>
   </header>
-  <div class="section"><h2>Bab I – Tentang Kamu yang Layak Diabadikan</h2><p>[ISI BAB I]</p></div>
-  <div class="section"><h2>Bab II – Kalau Suatu Hari Aku Diizinkan</h2><p>[ISI BAB II]</p><div class="photo-grid"><!-- FOTO-FOTO --></div></div>
-  <div class="section"><h2>Bab III – Tentang Video yang Datang Sebelum Tanggalnya</h2><p>[ISI BAB III]</p><iframe src="https://drive.google.com/file/d/12hyZ8RAe3IZ3vEkfbkJircRoAql4WlyC/preview" width="640" height="360" allow="autoplay"></iframe></div>
-  <div class="section"><h2>Bab IV – Untuk Yang Layak Disimpan, Diam-Diam</h2><p>[ISI BAB IV]</p></div>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json');
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(sec => observer.observe(sec));
-  </script>
+
+  <div class="section">
+    <h2>Bab I – Tentang Kamu yang Layak Diabadikan</h2>
+    <p>Kamu mungkin bertanya-tanya… kenapa isinya foto kamu semua? [...] Dan itu udah lebih dari cukup untuk aku abadikan.</p>
+  </div>
+
+  <div class="section">
+    <h2>Bab II – Kalau Suatu Hari Aku Diizinkan</h2>
+    <p>Dan… kalau suatu hari aku diizinkan, aku pengen nambah satu hal lagi ke dalam kotak ini: foto kamu waktu kecil. [...] Dan itu udah lebih dari cukup untuk aku abadikan.</p>
+    <div class="image-gallery">
+      <img src="https://drive.google.com/uc?id=10xWCwMLEqdiaX-FrgQf-0ESRsplydMOk" />
+      <img src="https://drive.google.com/uc?id=12Nnaly1HmMqLVWJyXugv_vx-WNXpLNGJ" />
+      <img src="https://drive.google.com/uc?id=121gY5vxMQM-GoXktaYwxi6B7Sh2yM_Xu" />
+      <img src="https://drive.google.com/uc?id=11a3Np5y0oOSBLHD4m-Dh33vy1CGF0h_V" />
+      <img src="https://drive.google.com/uc?id=11tonUxAjy-lb-DHnsX_jwoJg4Qv80kcp" />
+      <img src="https://drive.google.com/uc?id=124G7759z_h1ZrqfU5ftX5vXxZvnwOePy" />
+      <img src="https://drive.google.com/uc?id=11HIsuDXoaxMOazuofwd_njpj4mhMWrJv" />
+      <img src="https://drive.google.com/uc?id=11kyHeqG8jB8iptyDmWPjscSuWfWuPvNN" />
+      <img src="https://drive.google.com/uc?id=10oXhUj0en37799siEA36puyfJpMtoyom" />
+      <img src="https://drive.google.com/uc?id=11qmW7bqzK9d13faORIxL2LYLBjBckw9I" />
+      <img src="https://drive.google.com/uc?id=11I5FToyIXmzh32nmobgOa1layb3D4lPQ" />
+      <img src="https://drive.google.com/uc?id=10w1O2x6pS9duh3H1dGWqhjknXzgpYjQ1" />
+      <img src="https://drive.google.com/uc?id=12a6xa_cHMVUhA3uhygQKEDkXS5rNr4lq" />
+      <img src="https://drive.google.com/uc?id=10qGQBSRY8fD3W_Z5VF7MlIrm5gBjq00y" />
+      <img src="https://drive.google.com/uc?id=12EokEFA2j0ClPJr3qnnaJcDGEpDyqa8l" />
+      <img src="https://drive.google.com/uc?id=12-Bn0nAEHTlzO9uFxqrFvt6PSEVNRn62" />
+      <img src="https://drive.google.com/uc?id=11IcGXNNjgy-RI_7yBG2iDBWpJfeNdZnx" />
+      <img src="https://drive.google.com/uc?id=1224mF4CpKDgndWuBn76MwVvpZPTe3Ac-" />
+      <img src="https://drive.google.com/uc?id=12Yyr6FVUPuktWaaAqla0PkpuyPpCjoiC" />
+      <img src="https://drive.google.com/uc?id=116xmGyxDI1V_bn134_Ps-y-T7xTzCl7Y" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Bab III – Tentang Video yang Datang Sebelum Tanggalnya</h2>
+    <p>Mungkin ini terlalu cepat. Tanggal 23 Agustus masih lama… [...] Ini adalah potongan waktu, perasaan, dan perhatian yang aku pilih buat kamu.</p>
+    <div class="video">
+      <video controls>
+        <source src="https://drive.google.com/uc?id=12hyZ8RAe3IZ3vEkfbkJircRoAql4WlyC" type="video/mp4">
+        Browser kamu tidak mendukung video ini.
+      </video>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Bab IV – Untuk Yang Layak Disimpan, Diam-Diam</h2>
+    <p>Mungkin semua ini cuma hal kecil. Tapi aku yakin… hal kecil yang dibuat dengan hati, bisa sampai lebih dalam daripada hal besar yang dibuat terburu-buru. [...] Tapi juga di dalam rasa, yang diam… tapi nyata.</p>
+  </div>
 </body>
 </html>
